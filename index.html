@@ -9,8 +9,8 @@
 <body>
 
 <section class="container">
-    <h1>Multiplication Table</h1>
-    <h3>Create your own multiplication table that is rendered with an HTML table!</h3>
+    <h1>Multiplication Table &#128523 </h1>
+    <h3>Create your own multiplication table that is rendered with an HTML table! &#128540 </h3>
 
     <div class="generate-box">
         <div class="inputs">
@@ -21,9 +21,13 @@
             <label for="cols">Columns:
                 <input id="cols" type="number" value="10"  placeholder="How many columns?"/>
             </label>
+
+            <label for="highlight" class="highlight">Highlight:
+                <input id="highlight" type="number"  placeholder="Highlight row & column!"/>
+            </label>
         </div>
 
-        <button id="generate" onclick="createWithHtmlTable(getRowsDesired(), getColumnsDesired())">generate NOW</button>
+        <button id="generate" onclick="createWithHtmlTable(getRowsDesired(), getColumnsDesired(), getHighlightValue())">generate NOW</button>
     </div>
 
     <div id="output"></div>

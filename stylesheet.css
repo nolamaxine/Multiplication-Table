@@ -2,7 +2,8 @@ section.container{
     width: 70vw;
     height: 100vh;
     margin: 0 auto;
-    border: 1px dotted hotpink;
+    border: 5px dotted hotpink;
+    background-color: floralwhite;
 
 
     h1, h3 {
@@ -23,10 +24,13 @@ section.container{
             flex-direction: column;
             gap: 5px;
 
+
             label {
                 display: flex;
                 gap: 10px;
                 justify-content: space-between;
+                color: deeppink;
+                font-family: "American Typewriter", serif;
 
 
             }
@@ -34,6 +38,9 @@ section.container{
         button {
             background-color: pink;
             border: dotted 1px hotpink;
+            color: deeppink;
+            font-family: "American Typewriter", serif;
+            border-radius: 10px;
         }
     }
 }
@@ -43,7 +50,7 @@ section.container{
     max-width: 90vw;
     max-height: 60vh;
 
-    table, th, td{
+    table, th, tr, td{
         border: 1px solid pink;
         border-collapse: collapse;
     }
@@ -51,10 +58,37 @@ section.container{
     table {
         border: 1px solid black;
 
+        tr:first-of-type {
+            background-color: lightpink;
+            color: deeppink;
+        }
+
+        tr:last-of-type {
+            background-color: bisque;
+            color: black;
+        }
+
+        td:first-of-type {
+            background-color: lightpink;
+            color: deeppink;
+        }
+
+        td:last-of-type {
+            background-color: bisque;
+            color: black;
+        }
+
+
+
+        .highlight {
+            background-color: aquamarine;
+        }
+
         td {
             padding: 4px;
             text-align: center;
         }
     }
+
 }
 
