@@ -59,24 +59,24 @@ function getColumnsDesired() {
 
 
 function createWithHtmlTable(rows, cols) {
-    let string
-    if (rows && cols) {
-        string = "<table>\n"
+    let string //define a variable called string
+    if (rows && cols) { //if rows nd columns were provided
+        string = "<table>\n" //start building the HTML table
 
         for (let row = 1; row <= rows; row++) {
-            string += `<tr>\n`
+            string += `<tr>\n` //start building HTML row
 
             for (let col = 1; col <= cols; col++) {
-                string += "<td>"
-                string += row * col
-                string += "<td>\n"
+                string += "<td>" //start building a cell
+                string += row * col //populate contents of cell
+                string += "<td>\n" //complete cell
             }
-            string += "</tr>\n"
+            string += "</tr>\n" //complete HTML row
         }
 
         string += "</table>\n"
-    } else {
-        string = 'Provide some inputs'
+    } else { //method wasn't provided
+        string = 'Provide some inputs' //text "provide some inputs" will show
     }
     document.getElementById("output").innerHTML = string;
 
