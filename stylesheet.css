@@ -1,3 +1,44 @@
+/*section.container {*/
+/*    width: 70vw;*/
+/*    height: 100vh;*/
+/*    margin: 0 auto;*/
+
+/*    display: flex;*/
+/*    flex-direction: column;*/
+/*    align-items: center;*/
+/*    gap: 10px;*/
+
+/*    .generate-box {*/
+/*        display: flex;*/
+/*        gap: 10px;*/
+
+/*        .inputs {*/
+/*            display: flex;*/
+/*            flex-direction: column;*/
+/*            gap: 5px;*/
+
+/*            label {*/
+/*                display: flex;*/
+/*                gap: 10px;*/
+/*                justify-content: space-between;*/
+/*            }*/
+/*        }*/
+/*    }*/
+
+/*    #output {*/
+/*        border: 1px solid black;*/
+/*        display: flex;*/
+/*        flex-direction: column;*/
+/*        gap: 5px;*/
+
+/*        .row {*/
+/*            display: flex;*/
+/*            justify-content: space-between;*/
+/*            gap: 5px;*/
+/*        }*/
+/*    }*/
+/*}*/
+
 section.container {
     width: 70vw;
     height: 100vh;
@@ -38,4 +79,3 @@ section.container {
         }
     }
 }
-
