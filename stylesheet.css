@@ -1,15 +1,8 @@
-section.container{
+section.container {
     width: 70vw;
     height: 100vh;
     margin: 0 auto;
-    border: 5px dotted hotpink;
-    background-color: floralwhite;
 
-
-    h1, h2, h3 {
-        font-family: PreppyGirlsHandwriting, serif;
-        color: deeppink;
-    }
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -19,76 +12,29 @@ section.container{
         display: flex;
         gap: 10px;
 
-        .inputs{
+        .inputs {
             display: flex;
             flex-direction: column;
             gap: 5px;
-
 
             label {
                 display: flex;
                 gap: 10px;
                 justify-content: space-between;
-                color: deeppink;
-                font-family: "American Typewriter", serif;
-
-
             }
         }
-        button {
-            background-color: pink;
-            border: dotted 1px hotpink;
-            color: deeppink;
-            font-family: "American Typewriter", serif;
-            border-radius: 10px;
-        }
-    }
-}
-
-#output {
-    overflow: scroll;
-    max-width: 90vw;
-    max-height: 60vh;
-
-    table, th, tr, td{
-        border: 1px solid pink;
-        border-collapse: collapse;
     }
 
-    table {
+    #output {
         border: 1px solid black;
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
 
-        tr:first-of-type {
-            background-color: lightpink;
-            color: deeppink;
-        }
-
-        tr:last-of-type {
-            background-color: bisque;
-            color: black;
-        }
-
-        td:first-of-type {
-            background-color: lightpink;
-            color: deeppink;
-        }
-
-        td:last-of-type {
-            background-color: bisque;
-            color: black;
-        }
-
-
-
-        .highlight {
-            background-color: aquamarine;
-        }
-
-        td {
-            padding: 4px;
-            text-align: center;
+        .row {
+            display: flex;
+            justify-content: space-between;
+            gap: 5px;
         }
     }
-
 }
-
